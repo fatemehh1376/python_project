@@ -91,6 +91,38 @@ class User(Post):
             self.user_name = username
             self.pass_word = password
 
+    def login_check(self):
+        logging.basicConfig(filename='app.log', filemode='w', format='%(levelname)s - %(asctime)s - %(message)s',
+                            level=logging.INFO)
+        logging.info("user is trying to login!")
+        count = 0  # count created to limit number of failed logins
+        success = False  # keeps track of succesful login
+        while count <= 3 and not success:
+            self.login()
+
+            for line in open("db.txt", "r").readlines():
+                acc_info = line.split()
+
+                # if username and password match, login is successful;
+                if login == acc_info[0] and pw == acc_info[1]:
+                    print("ACCESS GRANTED")
+                    access_info()
+                    success = True
+                    break
+        if not success:
+            print("\nIncorrect Username or Password. Please try again.\n")
+            count += 1
+        # if failure count is = 3, deny access and lock out.
+        if count == 3:
+            # stops code and doesn't allow any further input
+            sys.exit("ACCESS LOCKED. YOU DON'T DESERVE TO SEE WHAT'S HERE. GOODBYE.")
+
+    def update(self):
+        with open("username.txt", "a") as file:
+            while True:
+                data = input("please write new information") # get data
+                file.write(data)
+
     # here we want to see others profile
     def watch_others_profile(self):
         logging.basicConfig(filename='app.log', filemode='w', format='%(levelname)s - %(asctime)s - %(message)s',
