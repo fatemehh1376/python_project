@@ -32,18 +32,21 @@ class User(Post):
         logging.basicConfig(filename='app.log', filemode='w', format='%(levelname)s - %(asctime)s - %(message)s',
                             level=logging.INFO)
         logging.info("getting information from user!")
-        self.user_name = input("Enter your desired username: ")
+        self.user_name = input("Enter your desired username:\n ")
         with open("username.txt") as file_object1:
             for i, line in enumerate(file_object1):
                 while str(line) == self.user_name + "\n":
-                    self.user_name = input("Enter your desired username: ")
+                    self.user_name = input("please Enter another valid username,that was repeated:\n ")
         while len(self.pass_word) < 8:
-            self.pass_word = input("Enter your desired password(It should be at least 8 letters): ")
-        self.bio = input("You can add bio to your profile: ")
+            self.pass_word = input("Enter your desired password(It should be at least 8 letters):\n")
+        self.bio = input("You can add bio to your profile: \n")
+        self.phone = input("You can add phone number to your profile: \n")
         while len(self.phone) < 7:
-            self.phone = input("You can add phone number to your profile: ")
-        self.email = input("You can add email to your profile: ")
+            self.phone = input("please enter the correct phone number: \n")
+        self.email = input("You can add email to your profile: \n")
         # here we save personal detail in txt files
+        while '@' not in self.email:
+            self.email = input("please add valid email to your profile:\n ")
         with open("username.txt", "a+") as file_object1:
             # Move read cursor to the start of file.
             file_object1.seek(0)
@@ -88,6 +91,7 @@ class User(Post):
             self.user_name = username
             self.pass_word = password
 
+
     # here we want to see others profile
     def watch_others_profile(self):
         logging.basicConfig(filename='app.log', filemode='w', format='%(levelname)s - %(asctime)s - %(message)s',
@@ -124,7 +128,7 @@ class User(Post):
 
     # here is a function to accept the request
     def accept_or_not(self, username_want):
-        n = int(input("Enter one for yes(accept),two for no(reject)!: "))
+        n = int(input("Enter 1 for yes(accept),2 for no(reject)!: "))
         if n == 1:
             logging.basicConfig(filename='app.log', filemode='w', format='%(levelname)s - %(asctime)s - %(message)s',
                                 level=logging.INFO)

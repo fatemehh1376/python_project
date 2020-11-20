@@ -1,26 +1,25 @@
-INFO - 2020-11-20 13:05:55,094 - creating new user!
-INFO - 2020-11-20 13:05:55,095 - creating new user!
-INFO - 2020-11-20 13:05:55,095 - getting information from user!
-INFO - 2020-11-20 13:06:15,739 - getting information from user!
-INFO - 2020-11-20 13:06:59,769 - user wants to see others profile!
-INFO - 2020-11-20 13:06:59,778 - user wants to see others profile!
-INFO - 2020-11-20 13:06:59,783 - user wants to follow some one!
-INFO - 2020-11-20 13:06:59,783 - user wants to do some changes in list of posts!
-INFO - 2020-11-20 13:06:59,783 - a post created!
-INFO - 2020-11-20 13:06:59,783 - a post created!
-INFO - 2020-11-20 13:06:59,783 - a post created!
-INFO - 2020-11-20 13:06:59,783 - user edits the text of the post!
-INFO - 2020-11-20 13:06:59,783 - user wants to delete a post or a comment!
-ERROR - 2020-11-20 13:07:03,818 - the number user entered for deleting a comment is out of range!
-INFO - 2020-11-20 13:07:03,819 - user edits the text of the post!
-INFO - 2020-11-20 13:07:03,819 - user wants to delete a post or a comment!
-INFO - 2020-11-20 13:07:17,161 - user edits the text of the post!
-INFO - 2020-11-20 13:07:17,161 - user wants to delete a post or a comment!
-INFO - 2020-11-20 13:07:19,161 - creating new user!
-INFO - 2020-11-20 13:07:19,162 - a post created!
-INFO - 2020-11-20 13:07:19,162 - a post created!
-INFO - 2020-11-20 13:07:19,162 - a post created!
-INFO - 2020-11-20 13:07:19,162 - user is trying to login!
-INFO - 2020-11-20 13:07:19,175 - creating new user!
-INFO - 2020-11-20 13:07:19,176 - user is trying to login!
-INFO - 2020-11-20 13:07:30,531 - user accepted the follow request!
+INFO - 2020-11-20 14:02:58,199 - creating new user!
+INFO - 2020-11-20 14:02:58,200 - creating new user!
+INFO - 2020-11-20 14:02:58,200 - getting information from user!
+INFO - 2020-11-20 14:03:47,735 - getting information from user!
+INFO - 2020-11-20 14:04:14,012 - user wants to see others profile!
+INFO - 2020-11-20 14:04:14,014 - user wants to see others profile!
+INFO - 2020-11-20 14:04:14,015 - user wants to follow some one!
+INFO - 2020-11-20 14:04:14,015 - user wants to do some changes in list of posts!
+INFO - 2020-11-20 14:04:14,016 - a post created!
+INFO - 2020-11-20 14:04:14,016 - a post created!
+INFO - 2020-11-20 14:04:14,016 - a post created!
+INFO - 2020-11-20 14:04:14,016 - user edits the text of the post!
+INFO - 2020-11-20 14:04:14,016 - user wants to delete a post or a comment!
+INFO - 2020-11-20 14:04:21,155 - user edits the text of the post!
+INFO - 2020-11-20 14:04:21,155 - user wants to delete a post or a comment!
+INFO - 2020-11-20 14:04:34,259 - user edits the text of the post!
+INFO - 2020-11-20 14:04:34,259 - user wants to delete a post or a comment!
+INFO - 2020-11-20 14:04:39,934 - creating new user!
+INFO - 2020-11-20 14:04:39,934 - a post created!
+INFO - 2020-11-20 14:04:39,934 - a post created!
+INFO - 2020-11-20 14:04:39,934 - a post created!
+INFO - 2020-11-20 14:04:39,934 - user is trying to login!
+INFO - 2020-11-20 14:04:39,935 - creating new user!
+INFO - 2020-11-20 14:04:39,935 - user is trying to login!
+INFO - 2020-11-20 14:04:43,797 - user accepted the follow request!
